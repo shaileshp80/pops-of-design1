@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Pops Of Design</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      background-image: url("watermark.png");
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-blend-mode: overlay;
+    }
+
+    .container {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .title {
+      font-family: 'Lemon/Milk', Arial, sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .text {
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .email {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .logo {
+      width: 400px;
+      margin-bottom: 30px;
+    }
+
+    .social-links {
+      margin-top: 20px;
+      font-size: 40px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #fff;
+    }
+
+    .social-links a:hover {
+      color: #ff8000;
+    }
+
+    .custom-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("watermark.png");
+      background-repeat: repeat;
+      background-size: cover;
+      opacity: 0.8;
+      z-index: -1;
+    }
+
+    .navbar {
+      background-color: #000;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 18px;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ff8000;
+    }
+
+    .navbar-expand-lg {
+      animation: slideInDown 0.5s ease;
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100%);
+      }
+
+      to {
+        transform: translateY(0);
+      }
+    }
+
+  
+    @media (min-width: 768px) {
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .logo {
+        margin-bottom: 10px;
+      }
+
+      .about-text {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Pops Of Design</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#contact-form">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="social-links">
+      <a href="https://www.facebook.com/your-facebook-page" target="_blank"><img src="facebook-logo.png" alt="Facebook"
+          style="width: 40px;"></a>
+      <a href="https://www.instagram.com/your-instagram-page" target="_blank"><img src="instagram-logo.png"
+          alt="Instagram" style="width: 40px;"></a>
+    </div>
+    <div class="logo-container">
+      <img src="pops-logo.png" alt="Pops Of Design Logo" class="logo">
+      <h2 class="title about-text">About</h2>
+    </div>
+    <div class="custom-image"></div>
+
+    <div class="row justify-content-center">
+      <div class="col-10 col-md-8">
+        <p class="text">I offer a complete design service where clients can tweak designs. Visuals are given during the creative process. Whether you are looking for a logo refresh or a completely new design, I can create a professional and unique design for you.</p>
+        <p class="text">I specialize in clothing prints, logo design, flyers, and business cards. I print clothing myself but outsource flyer and business card prints using a quality company with fast delivery and very competitive rates.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="contact-form" tabindex="-1" role="dialog" aria-labelledby="contact-form-label"
+    aria-hidden="true">
+   
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
